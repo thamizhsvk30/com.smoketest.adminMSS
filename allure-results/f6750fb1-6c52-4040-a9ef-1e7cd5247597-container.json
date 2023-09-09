@@ -1,0 +1,1 @@
+{"uuid":"f6750fb1-6c52-4040-a9ef-1e7cd5247597","name":"mypageTest.AttendanceTest","children":["b6ce83a7-fb2c-4127-8b26-28864d124c0c"],"befores":[],"afters":[{"name":"teardown","status":"broken","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1684329098117,"stop":1684329098120}],"links":[],"start":1684329097766,"stop":1684329098194}

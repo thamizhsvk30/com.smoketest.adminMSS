@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-09T10:53:11 IST" name="Suite" finished-at="2023-09-09T10:55:45 IST" duration-ms="153762">
+    <groups>
+    </groups>
+    <test started-at="2023-09-09T10:53:11 IST" name="Test" finished-at="2023-09-09T10:55:45 IST" duration-ms="153762">
+      <class name="mypageTest.Attendance_Test">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mypageTest.Attendance_Test@56c4278e]" started-at="2023-09-09T10:54:01 IST" name="setup" finished-at="2023-09-09T10:54:04 IST" duration-ms="2943" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginpage_Test()[pri:4, instance:mypageTest.Attendance_Test@56c4278e]" started-at="2023-09-09T10:54:04 IST" name="loginpage_Test" finished-at="2023-09-09T10:54:11 IST" duration-ms="7357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpage_Test -->
+        <test-method signature="attendancePlan_Test()[pri:5, instance:mypageTest.Attendance_Test@56c4278e]" started-at="2023-09-09T10:54:14 IST" name="attendancePlan_Test" finished-at="2023-09-09T10:54:30 IST" duration-ms="15957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attendancePlan_Test -->
+        <test-method signature="editAttendceplan_Test()[pri:6, instance:mypageTest.Attendance_Test@56c4278e]" started-at="2023-09-09T10:54:34 IST" name="editAttendceplan_Test" finished-at="2023-09-09T10:54:43 IST" duration-ms="9459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editAttendceplan_Test -->
+        <test-method signature="addOverTime_Test()[pri:7, instance:mypageTest.Attendance_Test@56c4278e]" started-at="2023-09-09T10:54:46 IST" name="addOverTime_Test" finished-at="2023-09-09T10:54:57 IST" duration-ms="10341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOverTime_Test -->
+        <test-method signature="editOverTime_Test()[pri:8, instance:mypageTest.Attendance_Test@56c4278e]" started-at="2023-09-09T10:55:00 IST" name="editOverTime_Test" finished-at="2023-09-09T10:55:08 IST" duration-ms="8254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editOverTime_Test -->
+        <test-method signature="shiftRoasterNew_Test()[pri:9, instance:mypageTest.Attendance_Test@56c4278e]" started-at="2023-09-09T10:55:12 IST" name="shiftRoasterNew_Test" finished-at="2023-09-09T10:55:17 IST" duration-ms="5071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shiftRoasterNew_Test -->
+        <test-method signature="timesheet_Test()[pri:10, instance:mypageTest.Attendance_Test@56c4278e]" started-at="2023-09-09T10:55:20 IST" name="timesheet_Test" finished-at="2023-09-09T10:55:26 IST" duration-ms="6099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timesheet_Test -->
+        <test-method signature="imoffPage_Test()[pri:11, instance:mypageTest.Attendance_Test@56c4278e]" started-at="2023-09-09T10:55:30 IST" name="imoffPage_Test" finished-at="2023-09-09T10:55:41 IST" duration-ms="11097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imoffPage_Test -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:mypageTest.Attendance_Test@56c4278e]" started-at="2023-09-09T10:55:45 IST" name="teardown" finished-at="2023-09-09T10:55:45 IST" duration-ms="444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- mypageTest.Attendance_Test -->
+      <class name="mypageTest.Home_Test">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mypageTest.Home_Test@3081f72c]" started-at="2023-09-09T10:53:12 IST" name="setup" finished-at="2023-09-09T10:53:18 IST" duration-ms="6673" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginpage_Test()[pri:0, instance:mypageTest.Home_Test@3081f72c]" started-at="2023-09-09T10:53:18 IST" name="loginpage_Test" finished-at="2023-09-09T10:53:29 IST" duration-ms="10581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpage_Test -->
+        <test-method signature="todaystatuspage_Test()[pri:1, instance:mypageTest.Home_Test@3081f72c]" started-at="2023-09-09T10:53:32 IST" name="todaystatuspage_Test" finished-at="2023-09-09T10:53:41 IST" duration-ms="9077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- todaystatuspage_Test -->
+        <test-method signature="attenddash_Test()[pri:2, instance:mypageTest.Home_Test@3081f72c]" started-at="2023-09-09T10:53:45 IST" name="attenddash_Test" finished-at="2023-09-09T10:53:49 IST" duration-ms="4464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attenddash_Test -->
+        <test-method signature="separationdash_Test()[pri:3, instance:mypageTest.Home_Test@3081f72c]" started-at="2023-09-09T10:53:52 IST" name="separationdash_Test" finished-at="2023-09-09T10:53:57 IST" duration-ms="4585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- separationdash_Test -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:mypageTest.Home_Test@3081f72c]" started-at="2023-09-09T10:54:00 IST" name="teardown" finished-at="2023-09-09T10:54:01 IST" duration-ms="404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- mypageTest.Home_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
