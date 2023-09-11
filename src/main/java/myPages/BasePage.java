@@ -54,6 +54,16 @@ public class BasePage extends Page{
 		}
 	}
 	
+	
+	public String getPageTitle() {
+        
+		try {
+	            return driver.getTitle();
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	            return "Page Title Not Found";
+	        }
+	    }
 
 	
 	public void wait_For_clickable_WebElement(By locator) {

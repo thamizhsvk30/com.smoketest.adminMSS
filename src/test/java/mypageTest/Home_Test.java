@@ -22,19 +22,25 @@ public class Home_Test extends BaseTest{
 	
 	@Test(priority = 1)
 	public void todaystatuspage_Test() throws Throwable{
-		page.getInstance(Home_Page.class).todayStatus();;
-		test.log(LogStatus.PASS, "Today status screen was working fine");
+		page.getInstance(Home_Page.class).todayStatus();
+		String get_Page_Title = loginpage.get_Page_Title();
+		Assert.assertEquals("Your Self-Service Dashboard", get_Page_Title);
+		test.log(LogStatus.PASS, "Today status scree was working fine");
 	}
 	
 	@Test(priority = 2)
 	public void attenddash_Test() throws Throwable{
-		page.getInstance(Home_Page.class).AttendDashboard();;
+		page.getInstance(Home_Page.class).AttendDashboard();
+		String get_Page_Title1 = loginpage.get_Page_Title();
+		Assert.assertEquals("Your Attendance Dashboard",get_Page_Title1);
 		test.log(LogStatus.PASS, "Attendance dashbaord screen was working fine");
 	}
 	
 	@Test(priority = 3)
 	public void separationdash_Test() throws Throwable{
-		page.getInstance(Home_Page.class).separationdash_page();;
+		page.getInstance(Home_Page.class).separationdash_page();
+		String get_Page_Title2 = loginpage.get_Page_Title();
+		Assert.assertEquals("Your Separation Dashboard",get_Page_Title2);
 		test.log(LogStatus.PASS, "Separation dashbaord screen was working fine");
 	}
 }

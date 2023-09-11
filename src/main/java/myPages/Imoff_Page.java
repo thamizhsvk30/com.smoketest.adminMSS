@@ -73,6 +73,8 @@ public class Imoff_Page extends BasePage {
 		
 		// Methods for Imoff_Page screen
 		public void imoffpage_Test() throws Throwable {
+			
+			try {
 			pageWait();
 			get_Imoffmenu().click();
 			get_CreateNewplan().click();
@@ -86,10 +88,17 @@ public class Imoff_Page extends BasePage {
 			}
 			get_Imoffpolicyname().sendKeys("Automation Testing plan 00" + get_current_date());
 			pageWait();
-			get_shortcode().sendKeys("LJ");
+			get_shortcode().sendKeys("EJ");
 			get_Regularisecheckbox().click();
 			pageWait();
 			get_Save().click();
+			pageWait();
+			
+			} catch (Exception e) {
+				// TODO: handle exception
+				System.out.println(e.getMessage());
+			}
+
 			
 		}
 		

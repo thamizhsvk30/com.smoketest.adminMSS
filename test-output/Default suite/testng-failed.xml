@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mypageTest.Attendance_Test">
+      <class name="mypageTest.Home_Test">
         <methods>
           <include name="teardown"/>
-          <include name="timesheet_Test"/>
+          <include name="todaystatuspage_Test"/>
+          <include name="attenddash_Test"/>
+          <include name="separationdash_Test"/>
           <include name="setup"/>
+          <include name="loginpage_Test"/>
         </methods>
-      </class> <!-- mypageTest.Attendance_Test -->
+      </class> <!-- mypageTest.Home_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

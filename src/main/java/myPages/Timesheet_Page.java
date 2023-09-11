@@ -45,6 +45,7 @@ public class Timesheet_Page extends BasePage {
 	public void timesheet_page() throws Throwable {
 		pageWait();
 		get_TimesheetMenu().click();
+		pageWait();
 		get_DownloadTimesheetCheckbox().click();
 		pageWait();
 		get_UpdateAndSave().click();

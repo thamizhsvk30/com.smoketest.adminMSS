@@ -67,6 +67,7 @@ public class Overtime_page extends BasePage {
 	
 	
 	public void addovertime_plan() throws Throwable {
+		
 		get_OvertimeSubmenu().click();
 		pageWait();
 		get_AddOtplan().click();
@@ -98,7 +99,7 @@ public class Overtime_page extends BasePage {
 		get_OvertimeSubmenu().click();
 		pageWait();
 		get_EditOTplan().click();
-		pageWait();
+		pageWait();		
 		get_editOTname().clear();
 		get_editOTname().sendKeys(" Overtime Automation plan 01 " + get_current_date());
 		pageWait();

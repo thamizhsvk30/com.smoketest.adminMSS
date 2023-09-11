@@ -17,7 +17,7 @@ public class Attendanceplan_Page extends BasePage {
 	private By Attendancemenu = By.xpath("//li[@data-sub_menu_id='27']");
 	private By Addplanbtn = By.id("create_new_plan");
 	private By Planbackbutton = By.xpath("//a[@class='back_to_link pl-0']");
-	private By Editbtn = By.xpath("(//img[@src='/images/common/worq_v1/icon-edit.svg'])[1]");
+	private By Editbtn = By.xpath("(//img[@src='/images/common/worq_v1/icon-edit.svg'])[2]");
 	private By PlanName = By.id("name_of_the_plan");
 	private By Updatebtn = By.xpath("//*[text()='Update Plan'][1]");
 	private By Createpublish = By.xpath("//*[text()='Create & Publish'][1]");
@@ -83,7 +83,7 @@ public class Attendanceplan_Page extends BasePage {
 		pageWait();
 		get_Attendanceplanname().clear();
 		pageWait();
-		get_Attendanceplanname().sendKeys("Automation Testing plan 00" + get_current_date());
+		get_Attendanceplanname().sendKeys("Automation Testing plan " + get_current_date());
 		get_Createpublishbtn().click();
 	}
 
@@ -93,7 +93,7 @@ public class Attendanceplan_Page extends BasePage {
 		pageWait();
 		get_PlanName().clear();
 		pageWait();
-		get_PlanName().sendKeys("Thamizh Test Plan 02"+ get_current_date());
+		get_PlanName().sendKeys("Edited Automation Testing plan "+ get_current_date());
 		pageWait();
 		get_Updatebtn().click();
 	}

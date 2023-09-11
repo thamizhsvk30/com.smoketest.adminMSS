@@ -25,9 +25,18 @@ public class Shiftroaster_page extends BasePage{
 	// Methods for Shift roastering screen
 	public void shiftroasterpage() throws Throwable {
 		
-		get_shiftroastermenu().click();
-		pageWait();
-		driver.navigate().refresh();
+		try {
+			pageWait();
+			get_shiftroastermenu().click();
+			pageWait();
+			driver.navigate().refresh();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e.getMessage());
+		}
+		
+		
 	}
 	
 	

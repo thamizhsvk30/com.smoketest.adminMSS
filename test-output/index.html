@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods,   12 passed</span>
+                    <span class="method-stats">14 methods, 1 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mypageTest.Attendance_Test" class="method navigator-link" hash-for-method="imoffPage_Test">imoffPage_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +116,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mypageTest.Attendance_Test" class="method navigator-link" hash-for-method="addApprovalWorkflow_Test">addApprovalWorkflow_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="mypageTest.Attendance_Test" class="method navigator-link" hash-for-method="addOverTime_Test">addOverTime_Test</a> <!-- method navigator-link -->
@@ -119,6 +138,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mypageTest.Attendance_Test" class="method navigator-link" hash-for-method="editApprovalWorkflow">editApprovalWorkflow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="mypageTest.Attendance_Test" class="method navigator-link" hash-for-method="editAttendceplan_Test">editAttendceplan_Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -129,17 +153,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="mypageTest.Attendance_Test" class="method navigator-link" hash-for-method="imoffPage_Test">imoffPage_Test</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="mypageTest.Home_Test" class="method navigator-link" hash-for-method="loginpage_Test">loginpage_Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="mypageTest.Attendance_Test" class="method navigator-link" hash-for-method="loginpage_Test">loginpage_Test</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="mypageTest.Home_Test" class="method navigator-link" hash-for-method="loginpage_Test">loginpage_Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -174,6 +193,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">mypageTest.Attendance_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="imoffPage_Test">
+                  </a> <!-- imoffPage_Test -->
+                  <span class="method-name">imoffPage_Test</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [New I&apos;m Off Setting] but found [New I&apos;m Off Settings]
+	at mypageTest.Attendance_Test.imoffPage_Test(Attendance_Test.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -218,6 +257,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="addApprovalWorkflow_Test">
+                  </a> <!-- addApprovalWorkflow_Test -->
+                  <span class="method-name">addApprovalWorkflow_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="addOverTime_Test">
                   </a> <!-- addOverTime_Test -->
                   <span class="method-name">addOverTime_Test</span>
@@ -232,6 +278,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="editApprovalWorkflow">
+                  </a> <!-- editApprovalWorkflow -->
+                  <span class="method-name">editApprovalWorkflow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="editAttendceplan_Test">
                   </a> <!-- editAttendceplan_Test -->
                   <span class="method-name">editAttendceplan_Test</span>
@@ -242,13 +295,6 @@
                   <a name="editOverTime_Test">
                   </a> <!-- editOverTime_Test -->
                   <span class="method-name">editOverTime_Test</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="imoffPage_Test">
-                  </a> <!-- imoffPage_Test -->
-                  <span class="method-name">imoffPage_Test</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -331,55 +377,63 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'attendancePlan_Test')
+data.setCell(0, 1, 'addApprovalWorkflow_Test')
 data.setCell(0, 2, 'mypageTest.Attendance_Test')
-data.setCell(0, 3, 15957);
+data.setCell(0, 3, 21341);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'imoffPage_Test')
+data.setCell(1, 1, 'attendancePlan_Test')
 data.setCell(1, 2, 'mypageTest.Attendance_Test')
-data.setCell(1, 3, 11097);
+data.setCell(1, 3, 12622);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginpage_Test')
-data.setCell(2, 2, 'mypageTest.Home_Test')
-data.setCell(2, 3, 10581);
+data.setCell(2, 1, 'imoffPage_Test')
+data.setCell(2, 2, 'mypageTest.Attendance_Test')
+data.setCell(2, 3, 11895);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'addOverTime_Test')
 data.setCell(3, 2, 'mypageTest.Attendance_Test')
-data.setCell(3, 3, 10341);
+data.setCell(3, 3, 9013);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'editAttendceplan_Test')
 data.setCell(4, 2, 'mypageTest.Attendance_Test')
-data.setCell(4, 3, 9459);
+data.setCell(4, 3, 7942);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'todaystatuspage_Test')
-data.setCell(5, 2, 'mypageTest.Home_Test')
-data.setCell(5, 3, 9077);
+data.setCell(5, 1, 'editOverTime_Test')
+data.setCell(5, 2, 'mypageTest.Attendance_Test')
+data.setCell(5, 3, 7436);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'editOverTime_Test')
+data.setCell(6, 1, 'timesheet_Test')
 data.setCell(6, 2, 'mypageTest.Attendance_Test')
-data.setCell(6, 3, 8254);
+data.setCell(6, 3, 7095);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginpage_Test')
+data.setCell(7, 1, 'editApprovalWorkflow')
 data.setCell(7, 2, 'mypageTest.Attendance_Test')
-data.setCell(7, 3, 7357);
+data.setCell(7, 3, 6595);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'timesheet_Test')
-data.setCell(8, 2, 'mypageTest.Attendance_Test')
-data.setCell(8, 3, 6099);
+data.setCell(8, 1, 'todaystatuspage_Test')
+data.setCell(8, 2, 'mypageTest.Home_Test')
+data.setCell(8, 3, 5696);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'shiftRoasterNew_Test')
 data.setCell(9, 2, 'mypageTest.Attendance_Test')
-data.setCell(9, 3, 5071);
+data.setCell(9, 3, 4831);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'separationdash_Test')
+data.setCell(10, 1, 'attenddash_Test')
 data.setCell(10, 2, 'mypageTest.Home_Test')
-data.setCell(10, 3, 4585);
+data.setCell(10, 3, 4488);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'attenddash_Test')
+data.setCell(11, 1, 'loginpage_Test')
 data.setCell(11, 2, 'mypageTest.Home_Test')
-data.setCell(11, 3, 4464);
+data.setCell(11, 3, 4412);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'separationdash_Test')
+data.setCell(12, 2, 'mypageTest.Home_Test')
+data.setCell(12, 3, 4397);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'loginpage_Test')
+data.setCell(13, 2, 'mypageTest.Attendance_Test')
+data.setCell(13, 3, 3793);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -417,66 +471,76 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginpage_Test</span>
-                <span class="method-start">6688 ms</span>
+                <span class="method-start">3169 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">todaystatuspage_Test</span>
-                <span class="method-start">20767 ms</span>
+                <span class="method-start">11051 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">attenddash_Test</span>
-                <span class="method-start">33194 ms</span>
+                <span class="method-start">20068 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">separationdash_Test</span>
-                <span class="method-start">40965 ms</span>
+                <span class="method-start">27852 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">48861 ms</span>
+                <span class="method-start">35546 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">mypageTest.Attendance_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">49265 ms</span>
+                <span class="method-start">35945 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginpage_Test</span>
-                <span class="method-start">52208 ms</span>
+                <span class="method-start">37993 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">attendancePlan_Test</span>
-                <span class="method-start">62860 ms</span>
+                <span class="method-start">45078 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">editAttendceplan_Test</span>
-                <span class="method-start">82113 ms</span>
+                <span class="method-start">60963 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addOverTime_Test</span>
-                <span class="method-start">94887 ms</span>
+                <span class="method-start">72221 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">editOverTime_Test</span>
-                <span class="method-start">108536 ms</span>
+                <span class="method-start">84522 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">shiftRoasterNew_Test</span>
-                <span class="method-start">120082 ms</span>
+                <span class="method-start">95248 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">timesheet_Test</span>
-                <span class="method-start">128491 ms</span>
+                <span class="method-start">103414 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">imoffPage_Test</span>
-                <span class="method-start">138636 ms</span>
+                <span class="method-start">113798 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addApprovalWorkflow_Test</span>
+                <span class="method-start">125972 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editApprovalWorkflow</span>
+                <span class="method-start">150625 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">153004 ms</span>
+                <span class="method-start">160543 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

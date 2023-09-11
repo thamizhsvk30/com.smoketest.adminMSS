@@ -44,23 +44,35 @@ public class Home_Page extends BasePage {
 }
 	
 	
+
 	public void todayStatus() throws Throwable {
 	
 		pageWait();
 		get_Todaystatus().click();
+//		String title = driver.getTitle();
+//		System.out.println(title);
 		pageWait();		
 	}
+	
+	
+	
 	public void AttendDashboard() throws Throwable {
+		
 		pageWait();
 		get_Attendancedashboard().click();
+//		String title = driver.getTitle();
+//		System.out.println(title);
 		pageWait();
 		
 	}
 	public void separationdash_page() throws Throwable {
+		
 		pageWait();
 		Actions Ac = new Actions(driver);
 		Ac.moveToElement(get_threedot()).perform();
 		get_Separationdash().click();
+//		String title = driver.getTitle();
+//		System.out.println(title);
 		pageWait();
 }
 }
