@@ -96,11 +96,11 @@ public class MyListeners implements ITestListener {
 			reports.endTest(test);
 			reports.flush();  
 			
-			String recipient = "thamizhselvan.v@heptagon.in"; // Replace with the recipient's email
-	        String subject = "Test Automation Results";
-	        String body = "The test suite has finished running. Here is the report...";
-
-	        EmailSender.sendEmail(recipient, subject, body);
+//			String recipient = "thamizhselvan.v@heptagon.in"; // Replace with the recipient's email
+//	        String subject = "Test Automation Results";
+//	        String body = "The test suite has finished running. Here is the report...";
+//
+//	        EmailSender.sendEmail(recipient, subject, body);
 	    }
 			
 		}
