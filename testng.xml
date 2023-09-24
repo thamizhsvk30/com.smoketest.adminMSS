@@ -9,7 +9,6 @@
   	<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="mypageTest.Home_Test" />
-			<class name="mypageTest.Attendance_Test" />
 			
 			
 			

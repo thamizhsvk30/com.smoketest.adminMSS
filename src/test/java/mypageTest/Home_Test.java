@@ -3,12 +3,14 @@ package mypageTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
+
 import myPages.Home_Page;
 import myPages.Login_Page;
 
 public class Home_Test extends BaseTest{
 
-	Login_Page loginpage;
+	Login_Page loginpage;	
+   	
 	
 	@Test(priority = 0)
 	public void loginpage_Test() {
@@ -26,7 +28,7 @@ public class Home_Test extends BaseTest{
 		String get_Page_Title = loginpage.get_Page_Title();
 		Assert.assertEquals("Your Self-Service Dashboard", get_Page_Title);
 		test.log(LogStatus.PASS, "Today status scree was working fine");
-	}
+		}
 	
 	@Test(priority = 2)
 	public void attenddash_Test() throws Throwable{

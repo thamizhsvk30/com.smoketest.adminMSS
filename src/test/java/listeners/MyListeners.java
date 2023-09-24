@@ -17,11 +17,15 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import myPages.EmailSender;
+
 public class MyListeners implements ITestListener {
+		
 		public static WebDriver driver;
 		protected static ExtentReports reports;
 		public static ExtentTest test;
-
+		
+		
 		public void onTestStart(ITestResult result) {
 			System.out.println("on test start");
 			test = reports.startTest(result.getMethod().getMethodName());
@@ -90,6 +94,14 @@ public class MyListeners implements ITestListener {
 		public void onFinish(ITestContext context) {
 			System.out.println("on finish");
 			reports.endTest(test);
-			reports.flush();
+			reports.flush();  
+			
+			String recipient = "thamizhselvan.v@heptagon.in"; // Replace with the recipient's email
+	        String subject = "Test Automation Results";
+	        String body = "The test suite has finished running. Here is the report...";
+
+	        EmailSender.sendEmail(recipient, subject, body);
+	    }
+			
 		}
-	}
+	
